@@ -1,0 +1,43 @@
+1) When I run the "pip installed" command - it allowed me to install Django version 1.11.9.  Below is a snippet of the message I received once I installed Django: 
+
+	Installing collected packages: pytz, Django
+	Successfully installed Django-1.11.9 pytz-2018.5
+
+2)When I run the command "pip list",  it provided me with a list of Python modules, that are installed on my machine.  Below is a sample of the message:
+
+(py3Env) Shannons-MacBook-Pro:myEnvironments shannonmbrown$ pip list
+Package    Version
+---------- -------
+Django     1.11.9 
+pip        10.0.1 
+pytz       2018.5 
+setuptools 39.2.0 
+wheel      0.31.1 
+
+3) When I run the command "deactivate" in my virtualenv, it allows me to exit/terminate working in my virtualenv.  
+
+4) When I run the "pip3 list" command I can see my virtualenvir showup versus when running pip list.
+
+5) When I run the "source py3Env/bin/activate" command, I am now back in my virtualenv.
+
+6). When I run the "pip install Django==1.11.9" command, it states "Requirement already satisfied: pytz in ./py3Env/lib/python3.7/site-packages (from Django==1.11.9) (2018.5)".
+
+7) When I run the "pip freeze" command, I get the below response:  
+
+	Django==1.11.9
+	pytz==2018.5
+
+	pip freeze does not list the packages that pip itself depends on.  In order to keep my environment consistent, it’s a good idea to “freeze” the current state of the environment packages.
+
+8). When I run the command "pip freeze > requirements.txt", it keeps my environment consistent.  You are freezing the current state of the environment packages.
+
+	contains a simple list of all the packages in the current environment, and their respective versions. You can see the list of installed packages without the requirements format using “pip list”. Later it will be easier for a different developer (or myself, if I need to re-create the environment) to install the same packages using the same versions.
+
+8.1). When I run the command "ls", I see a list of files that are currently on my desl of my laptop.
+
+9) When I run the function "pip uninstall Django" it tells me what files that would be removed if I agree/select "y" to remove/unistall from the folder that was created to support this action.
+
+10). When I run the command "pip show Django"; I am  given details about the current version of Django that I have and where it is installed.
+
+11) When I run the command "pip search Flask"; I see an output with all packages containing the name "Flask" and
+a description with that. 

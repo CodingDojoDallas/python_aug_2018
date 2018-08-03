@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+	width:980px;
+	min-height:1020px;
+	margin:0px auto;
+}
+
+h1 {
+    text-align: center;
+    color: maroon;
+    margin-left: 40px;
+} 
+
+	
+.box_three {
+		display:inline-block;
+		width:150px;
+		height:150px;
+		padding:50px;
+		margin::30px;
+		margin-left:12px;
+		border: solid 5px black;
+		background-color: {{c}};
+}
+
+</style>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Playground Assignment</title>
+</head>
+<body>
+	<div class="multi_box">
+		<h1>Welcome!</h1>	
+		{% for x in range(0, num): %}
+		<div class="box_three"></div>
+		{% endfor %}
+	</div> 
+	
+</body>
+</html>
