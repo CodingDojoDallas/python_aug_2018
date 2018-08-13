@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Playground</title>
+	<style>
+		body {
+			background-color: #A0FFD1;
+		}
+		h1 {
+			color: maroon;
+			margin-left: 40px;
+			text-align: center;
+		}
+		div{
+			color: navy;
+			background-color: {{shade}};
+			display: inline-block;
+			border: 2px black solid;
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome!</h1>
+
+{% for i in range(0,num) %}
+	<div></div>
+{% endfor %}
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 from random import randint
 from flask import Flask, redirect, render_template, request, session, url_for
 
@@ -70,3 +71,11 @@ def process_gold():
 def reset():
     session.clear()
     return redirect(url_for('.index'))
+=======
+from flask import *
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello():
+    return 'Hello World!'

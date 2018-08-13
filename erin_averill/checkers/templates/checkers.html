@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Checkerboard</title>
+	<style>
+		tr td{
+			width:30px;
+			height: 30px;
+			background-color: black;
+			display: inline-block;
+			margin-top: -4px;
+			border: 0.5px black solid;
+
+		}
+		#alt_color {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		{% for i in range (0, length) %}
+		<tr>
+		{% for w in range(0, width): %}
+			<td id="alt_color"></td>
+			<td></td>
+		{% endfor %}
+		</tr>
+		<tr>
+		{% for w in range(0, width): %}
+			<td></td>
+			<td id="alt_color"></td>
+		{% endfor %}
+		</tr>
+		<tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
